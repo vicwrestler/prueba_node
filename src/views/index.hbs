@@ -1,0 +1,12 @@
+<div class="container-movies">
+  {{#each movies}}
+    <a href="/movie_details/{{id}}" class="card-movie">
+      <div class="card-movie-img">
+        <img src="{{concat poster_path}}" alt="{{title}}" class="movie-img" />
+      </div>
+      <h2 class="card-movie-title">
+        {{title}}
+      </h2>
+    </a>
+  {{/each}}
+</div>

@@ -1,0 +1,14 @@
+<div class="container_movie_details">
+    <div class="card-movie-img" style="max-width: 200px;">
+        <img src="{{concat movie.poster_path}}" alt="{{movie.title}}" class="movie-img" />
+      </div>
+      <h2 class="card-movie-title">
+        {{movie.title}}
+      </h2>
+      <ul style="display: flex;">
+      {{#each movie.genres}}
+      <li style="margin: 0 10px; list-style: none;">{{name}}</li>
+      {{/each}}
+      </ul>
+      <p>{{movie.overview}}</p>
+</div>
